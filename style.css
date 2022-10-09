@@ -45,3 +45,8 @@ body {
 .header {
     font-size: 40px;
 }
+
+.text-content {
+    color: grey;
+    line-height: 25px;
+}
