@@ -26,9 +26,9 @@ body {
 
 .right-side {
     max-height: 100%;
+    max-width: 270px;
     position: relative;
-    left: 50px;
-    max-width: 200px;
+    left: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -43,5 +43,5 @@ body {
 }
 
 .header {
-
+    font-size: 40px;
 }
