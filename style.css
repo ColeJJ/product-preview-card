@@ -43,10 +43,32 @@ body {
 }
 
 .header {
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
     font-size: 40px;
 }
 
 .text-content {
+    font-family: 'Montserrat', sans-serif;
     color: grey;
     line-height: 25px;
+    font-size: 14px; 
+}
+
+.cost-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 200px;
+}
+
+.current-price {
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces', sans-serif;
+    font-size: 30px;
+}
+
+.old-price {
+    color: grey;
+    text-decoration: line-through;
 }
