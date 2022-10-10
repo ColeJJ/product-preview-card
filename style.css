@@ -14,13 +14,15 @@ body {
 .center {
 	height: 500px;
 	width: 700px;
-	border: 3px solid black;
+	border: 0px solid grey;
+    border-radius: 8px;
     display: flex;
     flex-direction: row;
     background: white;
+    overflow: hidden;
 }
 
-.pic {
+.leftside-pic {
 	width: 50%;
 }
 
@@ -32,14 +34,15 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 50px 10px 50px 10px;
+    padding: 40px 10px 40px 10px;
 }
 
 .perfume {
     display: block;
     text-transform: uppercase;
     color: grey;
-    letter-spacing: 2px;
+    letter-spacing: 5px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .header {
@@ -71,4 +74,24 @@ body {
 .old-price {
     color: grey;
     text-decoration: line-through;
+}
+
+button {
+    background-color: hsl(158, 36%, 37%);
+    border-radius: 8px;
+    border: 1px solid grey;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 250px;  
+}
+
+.button-content {
+    padding-right: 60px;
+    color: white;
+}
+
+.button-icon {
+    padding-left: 60px;
 }
