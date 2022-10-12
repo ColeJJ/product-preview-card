@@ -14,15 +14,19 @@ body {
 .center {
 	height: 500px;
 	width: 680px;
-	border: 0px solid grey;
+	border: 0px solid hsl(228, 12%, 48%);
     border-radius: 8px;
     display: flex;
     flex-direction: row;
     overflow: hidden;
 }
 
+.leftside-pic2 {
+    display: none;
+}
+
 .right-side {
-    background: white;
+    background: hsl(0, 0%, 100%);
     width: 100%;
     height: 100%;
 }
@@ -41,7 +45,7 @@ body {
 .perfume {
     display: block;
     text-transform: uppercase;
-    color: grey;
+    color: hsl(228, 12%, 48%);
     letter-spacing: 5px;
     font-family: 'Montserrat', sans-serif;
 }
@@ -54,7 +58,7 @@ body {
 
 .text-content {
     font-family: 'Montserrat', sans-serif;
-    color: grey;
+    color: hsl(228, 12%, 48%);
     line-height: 25px;
     font-size: 14px; 
 }
@@ -73,14 +77,14 @@ body {
 }
 
 .old-price {
-    color: grey;
+    color: hsl(228, 12%, 48%);
     text-decoration: line-through;
 }
 
 button {
     background-color: hsl(158, 36%, 37%);
     border-radius: 8px;
-    border: 1px solid grey;
+    border: 1px solid hsl(228, 12%, 48%);
     height: 50px;
     display: flex;
     align-items: center;
@@ -90,9 +94,34 @@ button {
 
 .button-content {
     padding-right: 60px;
-    color: white;
+    color: hsl(0, 0%, 100%); 
 }
 
 .button-icon {
     padding-left: 60px;
+}
+
+@media (max-width: 375px) {
+    .center {
+        width: 90%;
+        height: 90%;
+        flex-direction: column;
+    }
+
+    .leftside-pic1 {
+        display: none;
+    }
+    
+    .leftside-pic2 {
+        display: block;
+    }
+
+    .right-side {
+        position: relative;
+        z-index: 10;
+    }
+
+    .header {
+        font-size: 30px;
+    }
 }
