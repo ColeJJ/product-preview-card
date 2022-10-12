@@ -13,23 +13,22 @@ body {
 
 .center {
 	height: 500px;
-	width: 680px;
+	width: 700px;
 	border: 0px solid grey;
     border-radius: 8px;
     display: flex;
     flex-direction: row;
+    background: white;
     overflow: hidden;
 }
 
-.right-side {
-    background: white;
-    width: 100%;
-    height: 100%;
+.leftside-pic {
+	width: 50%;
 }
 
-.content {
-    height: 85%;
-    max-width: 80%;
+.right-side {
+    max-height: 100%;
+    max-width: 270px;
     position: relative;
     left: 30px;
     display: flex;
@@ -95,4 +94,10 @@ button {
 
 .button-icon {
     padding-left: 60px;
+}
+
+@media (max-width: 375px) {
+    .center {
+        width: 90%;
+    }
 }
